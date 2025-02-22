@@ -66,3 +66,17 @@ convBtn.addEventListener("click", function(){
     let randomGif = Math.floor(Math.random() * gifArr.length )
     gifEl.innerHTML = `<img src="${gifArr[randomGif]}">`
 })
+
+
+userInput.addEventListener("input", () => {
+    let maxFontSize = 58; // Default font size
+    let minFontSize = 20; // Smallest font size before stopping
+    let inputWidth = userInput.clientWidth;
+    
+    userInput.style.fontSize = `${maxFontSize}px`;
+
+    while (userInput.scrollWidth > inputWidth && maxFontSize > minFontSize) {
+        maxFontSize--; // Reduce font size
+        userInput.style.fontSize = `${maxFontSize}px`;
+    }
+});
