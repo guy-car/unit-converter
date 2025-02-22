@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: Inter;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+
+}
+
+#main-section {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    background-color: #6943FF;
+
+}
+
+#conversion-section {
+    background: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+
+}
+    .conversion-box {
+        background-color: #273549;
+        width: 500px;
+        margin-top: 25px;
+    }
+
+/* FONT and TEXT STYLES */
+.inter-general {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+h1 {
+    font-size: 28;
+}
+h2 {
+    color: #CCC1FF;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+h4 {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+
+/* BUTTON */
+button {
+    font-family: inherit;
+    font-size: 16;
+    width: 117px;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 34px;
+    margin-top: 25px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    overflow: hidden;
+}
+button:hover {
+    background-color: #B295FF;
+    color: #FFFFFF;
+}
+
+
+/* Number Input field style */
+input {
+    text-align: center;
+    font-size: 58px;
+    font-weight: 800;
+    color: #FFFFFF;
+
+    padding: 0px;
+    width: 117px;
+    height: 83px;
+
+    border: solid 2px #B295FF;
+    border-radius: 5px;
+
+    background-color: #6943FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    /* display: flex;
+    align-items: start;
+    justify-content: center; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
